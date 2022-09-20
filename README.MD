@@ -33,10 +33,10 @@ Spring-boot personal project application with data JPA restful API, multiple rol
 - Response
     ```json
     {
-      "code": "integer",
+      "code": "number",
       "message": "string",
       "data": {
-        "token": "string"
+        "access_token": "string"
       }   
     }
     ```
@@ -59,10 +59,10 @@ Spring-boot personal project application with data JPA restful API, multiple rol
 - Response
     ```json
     {
-      "code": "integer",
+      "code": "number",
       "message": "string",
       "data": {
-        "token": "string"
+        "access_token": "string"
       } 
     }
     ```
@@ -71,16 +71,16 @@ Spring-boot personal project application with data JPA restful API, multiple rol
 
 - Request
     - Method : GET
-    - Endpoint : ``api/v1/user``
+    - Endpoint : ``api/v1/me``
     - Header :
         - accept: application/json
 - Response
     ```json
     {
-      "code": "integer",
+      "code": "number",
       "message": "string",
       "data": {
-        "id": "integer",
+        "id": "number",
         "name": "string",
         "email": "string",
         "role": "string"
@@ -90,27 +90,77 @@ Spring-boot personal project application with data JPA restful API, multiple rol
 
 ### ADMIN AREA
 
+---
+
+#### Get All Users
+
 - Dummy Admin Data
   - email : ``admin@admin.com``
   - password : ``admin123``
 
 - Request
     - Method : GET
-    - Endpoint : ``api/v1/admin``
+    - Endpoint : ``api/v1/users``
     - Header :
         - accept: application/json
 - Response
     ```json
     {
-      "code": "integer",
+      "code": "number",
       "message": "string",
       "data": [
           {
-            "id": "integer",
+            "id": "number",
             "name": "string",
             "email": "string",
-            "role": "string"
+            "role": "array"
           }
       ]
+    }
+    ```
+  
+##### Grant User As Admin
+
+- Request
+  - Method : POST
+  - Endpoint : ``api/v1/grant``
+  - Header :
+    - accept: application/json
+    - content-type: application/json
+  - Body :
+  ```json
+    {
+      "userId": "number"
+    }
+  ```
+- Response
+    ```json
+    {
+      "code": "number",
+      "message": "string",
+      "data": null
+    }
+    ```
+
+##### UnGrant User As Admin
+
+- Request
+  - Method : POST
+  - Endpoint : ``api/v1/ungrant``
+  - Header :
+    - accept: application/json
+    - content-type: application/json
+  - Body :
+  ```json
+    {
+      "userId": "number"
+    }
+  ```
+- Response
+    ```json
+    {
+      "code": "number",
+      "message": "string",
+      "data": null
     }
     ```
