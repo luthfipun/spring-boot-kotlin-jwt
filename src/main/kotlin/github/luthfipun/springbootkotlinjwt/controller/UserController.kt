@@ -1,5 +1,6 @@
 package github.luthfipun.springbootkotlinjwt.controller
 
+import github.luthfipun.springbootkotlinjwt.domain.model.request.LoginRequest
 import github.luthfipun.springbootkotlinjwt.domain.model.request.RegisterRequest
 import github.luthfipun.springbootkotlinjwt.domain.model.response.RegisterLoginResponse
 import github.luthfipun.springbootkotlinjwt.domain.model.response.UsersResponse
@@ -31,5 +32,14 @@ class UserController(
     )
     fun register(@RequestBody registerRequest: RegisterRequest): WebResponse<RegisterLoginResponse>{
         return userService.register(registerRequest = registerRequest)
+    }
+
+    @PostMapping(
+        value = ["login"],
+        produces = ["application/json"],
+        consumes = ["application/json"]
+    )
+    fun login(@RequestBody loginRequest: LoginRequest): WebResponse<RegisterLoginResponse>{
+        return userService.login(loginRequest = loginRequest)
     }
 }
