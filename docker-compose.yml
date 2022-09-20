@@ -5,7 +5,7 @@ services:
     container_name: spring-jwt-mysql
     image: mysql:latest
     ports:
-      - 3306:3306
+      - "3306:3306"
     environment:
       MYSQL_DATABASE: springjwt
       MYSQL_ROOT_PASSWORD: root

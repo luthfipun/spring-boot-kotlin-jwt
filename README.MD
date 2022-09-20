@@ -1,6 +1,6 @@
 # Documentation
 
-SpringBoot application for learning and personal project with basic JPA database restful API, multiple role user authorization and Json Web Token (JWT) authentication
+Spring-boot personal project application with data JPA restful API, multiple role user authorization and Json Web Token (JWT) authentication
 
 ## TechStack
 
