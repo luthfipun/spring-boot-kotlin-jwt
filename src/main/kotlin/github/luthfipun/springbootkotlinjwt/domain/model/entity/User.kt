@@ -10,10 +10,10 @@ data class User(
     @GeneratedValue(strategy = GenerationType.AUTO)
     val id: Long = 0,
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = false)
     val name: String,
 
-    @Column(name = "email", unique = true)
+    @Column(name = "email", unique = true, nullable = false)
     val email: String,
 
     @Column(name = "password")
