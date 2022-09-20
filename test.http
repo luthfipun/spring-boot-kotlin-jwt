@@ -1,0 +1,24 @@
+
+### Test Register
+
+POST {{host}}/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "John Doe",
+  "email": "johndoe@email.com",
+  "password": "johndoe123"
+}
+
+### Test Register Invalid Data
+
+POST {{host}}/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "",
+  "email": "",
+  "password": ""
+}

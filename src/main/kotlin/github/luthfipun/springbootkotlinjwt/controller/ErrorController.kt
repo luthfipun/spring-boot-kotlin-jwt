@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.bind.annotation.ResponseStatus
 import org.springframework.web.bind.annotation.RestControllerAdvice
 import org.springframework.web.servlet.NoHandlerFoundException
+import javax.validation.ConstraintViolationException
 
 @RestControllerAdvice
 class ErrorController {
@@ -26,6 +27,15 @@ class ErrorController {
         return WebResponse(
             code = HttpStatus.NOT_FOUND.value(),
             message = noHandlerFoundException.message.orEmpty()
+        )
+    }
+
+    @ResponseStatus(value = HttpStatus.EXPECTATION_FAILED)
+    @ExceptionHandler(value = [ConstraintViolationException::class])
+    fun validationHandler(constraintViolationException: ConstraintViolationException): WebResponse<Nothing> {
+        return WebResponse(
+            code = HttpStatus.EXPECTATION_FAILED.value(),
+            message = constraintViolationException.message.orEmpty()
         )
     }
 }

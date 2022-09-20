@@ -8,12 +8,14 @@ import github.luthfipun.springbootkotlinjwt.repository.RoleRepository
 import github.luthfipun.springbootkotlinjwt.repository.UserRepository
 import org.springframework.boot.ApplicationArguments
 import org.springframework.boot.ApplicationRunner
+import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.stereotype.Component
 
 @Component
 class UserRoleSeeder(
     val userRepository: UserRepository,
-    val roleRepository: RoleRepository
+    val roleRepository: RoleRepository,
+    val passwordEncoder: PasswordEncoder
 ): ApplicationRunner {
     override fun run(args: ApplicationArguments?) {
 
@@ -35,7 +37,7 @@ class UserRoleSeeder(
         val admin = User(
             name = "Admin",
             email = "admin@admin.com",
-            password = "admin123"
+            password = passwordEncoder.encode("admin123")
         )
 
         if (!userRepository.findByEmail(email = admin.email).isPresent){
