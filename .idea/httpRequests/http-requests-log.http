@@ -1,46 +1,154 @@
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzYzNDIwLCJleHAiOjE2NjM3NjM0ODB9.b3vOQkRsS8p2WvXCXRnADimnp4kDaMa4ID_uWbl3o57sj11WyToJ649WXJgtMJ19-z9APiTLxVC1B005wSXixA
-
-<> 2022-09-21T193030.200.json
-
-###
-
-POST http://localhost:8080/api/v1/login
+POST http://localhost:8080/api/v1/ungrant
 Accept: application/json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc3NjQxLCJleHAiOjE2NjM3Nzg4NDF9.jhujmXe_OP6kYlLiYsBIQymq54bx2h4C23ovg7vimK5okD8Y_CmJQg-GHvvnyeqEXRxQR6AJCmmcz060jt-NIg
 
 {
-  "email": "admin@admin.com",
-  "password": "admin123"
+  "userId": 4
 }
 
-<> 2022-09-21T193020.200.json
+<> 2022-09-21T232932.406.json
 
 ###
 
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlhdCI6MTY2Mzc2MzM3MywiZXhwIjoxNjYzNzYzNDMzfQ.ikVAiYN2eQHYirO-Qml2AdHE0YW5RiTcwU3R4Qjr1AKsNe21rBOdap6OYj-C6eDYLYjM8x_XrfHBzK2XHz5fsA
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlhdCI6MTY2Mzc2MzM3MywiZXhwIjoxNjYzNzYzNDMzfQ.ikVAiYN2eQHYirO-Qml2AdHE0YW5RiTcwU3R4Qjr1AKsNe21rBOdap6OYj-C6eDYLYjM8x_XrfHBzK2XHz5fsA
-
-###
-
-POST http://localhost:8080/api/v1/login
+POST http://localhost:8080/api/v1/ungrant
 Accept: application/json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc3NjQxLCJleHAiOjE2NjM3Nzg4NDF9.jhujmXe_OP6kYlLiYsBIQymq54bx2h4C23ovg7vimK5okD8Y_CmJQg-GHvvnyeqEXRxQR6AJCmmcz060jt-NIg
 
 {
-  "email": "admin@admin.com",
-  "password": "admin123"
+  "userId": 4
 }
 
-<> 2022-09-21T193000.200.json
+<> 2022-09-21T232929.200.json
+
+###
+
+POST http://localhost:8080/api/v1/ungrant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc3NjQxLCJleHAiOjE2NjM3Nzg4NDF9.jhujmXe_OP6kYlLiYsBIQymq54bx2h4C23ovg7vimK5okD8Y_CmJQg-GHvvnyeqEXRxQR6AJCmmcz060jt-NIg
+
+{
+  "userId": null
+}
+
+<> 2022-09-21T232925.406.json
+
+###
+
+POST http://localhost:8080/api/v1/ungrant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc3NjQxLCJleHAiOjE2NjM3Nzg4NDF9.jhujmXe_OP6kYlLiYsBIQymq54bx2h4C23ovg7vimK5okD8Y_CmJQg-GHvvnyeqEXRxQR6AJCmmcz060jt-NIg
+
+{
+  "userId": 123456789
+}
+
+<> 2022-09-21T232922.406.json
+
+###
+
+POST http://localhost:8080/api/v1/ungrant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc3NjQxLCJleHAiOjE2NjM3Nzg4NDF9.jhujmXe_OP6kYlLiYsBIQymq54bx2h4C23ovg7vimK5okD8Y_CmJQg-GHvvnyeqEXRxQR6AJCmmcz060jt-NIg
+
+{
+  "userId": 123456789
+}
+
+<> 2022-09-21T232920.406.json
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc3NjQxLCJleHAiOjE2NjM3Nzg4NDF9.jhujmXe_OP6kYlLiYsBIQymq54bx2h4C23ovg7vimK5okD8Y_CmJQg-GHvvnyeqEXRxQR6AJCmmcz060jt-NIg
+
+<> 2022-09-21T232909.200.json
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlhdCI6MTY2Mzc3NzY1OCwiZXhwIjoxNjYzNzc4ODU4fQ.4xtkRsgoTUaKywz5tPw1nfVxUemFg4AhAk2KnSoHFq8C3rylRYOy8LyRmhQkvDxUy3a9wiDbPuZGXLLLh0S26g
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlhdCI6MTY2Mzc3NzY1OCwiZXhwIjoxNjYzNzc4ODU4fQ.4xtkRsgoTUaKywz5tPw1nfVxUemFg4AhAk2KnSoHFq8C3rylRYOy8LyRmhQkvDxUy3a9wiDbPuZGXLLLh0S26g
+
+###
+
+POST http://localhost:8080/api/v1/grant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc3NjQxLCJleHAiOjE2NjM3Nzg4NDF9.jhujmXe_OP6kYlLiYsBIQymq54bx2h4C23ovg7vimK5okD8Y_CmJQg-GHvvnyeqEXRxQR6AJCmmcz060jt-NIg
+
+{
+  "userId": 4
+}
+
+<> 2022-09-21T232843.200.json
+
+###
+
+POST http://localhost:8080/api/v1/grant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc3NjQxLCJleHAiOjE2NjM3Nzg4NDF9.jhujmXe_OP6kYlLiYsBIQymq54bx2h4C23ovg7vimK5okD8Y_CmJQg-GHvvnyeqEXRxQR6AJCmmcz060jt-NIg
+
+{
+  "userId": null
+}
+
+<> 2022-09-21T232835.406.json
+
+###
+
+POST http://localhost:8080/api/v1/grant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc3NjQxLCJleHAiOjE2NjM3Nzg4NDF9.jhujmXe_OP6kYlLiYsBIQymq54bx2h4C23ovg7vimK5okD8Y_CmJQg-GHvvnyeqEXRxQR6AJCmmcz060jt-NIg
+
+{
+  "userId": 123456789
+}
+
+<> 2022-09-21T232832.406.json
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlhdCI6MTY2Mzc3NzY1OCwiZXhwIjoxNjYzNzc4ODU4fQ.4xtkRsgoTUaKywz5tPw1nfVxUemFg4AhAk2KnSoHFq8C3rylRYOy8LyRmhQkvDxUy3a9wiDbPuZGXLLLh0S26g
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc3NjQxLCJleHAiOjE2NjM3Nzg4NDF9.jhujmXe_OP6kYlLiYsBIQymq54bx2h4C23ovg7vimK5okD8Y_CmJQg-GHvvnyeqEXRxQR6AJCmmcz060jt-NIg
+
+<> 2022-09-21T232816.200.json
+
+###
+
+GET http://localhost:8080/api/v1/me
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc3NjQxLCJleHAiOjE2NjM3Nzg4NDF9.jhujmXe_OP6kYlLiYsBIQymq54bx2h4C23ovg7vimK5okD8Y_CmJQg-GHvvnyeqEXRxQR6AJCmmcz060jt-NIg
+
+<> 2022-09-21T232807.200.json
+
+###
+
+GET http://localhost:8080/api/v1/me
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlhdCI6MTY2Mzc3NzY1OCwiZXhwIjoxNjYzNzc4ODU4fQ.4xtkRsgoTUaKywz5tPw1nfVxUemFg4AhAk2KnSoHFq8C3rylRYOy8LyRmhQkvDxUy3a9wiDbPuZGXLLLh0S26g
+
+<> 2022-09-21T232758.200.json
 
 ###
 
@@ -53,19 +161,7 @@ Content-Type: application/json
   "password": "johndoe123"
 }
 
-<> 2022-09-21T192933.200.json
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJbUk9MRV9BRE1JTl0iLCJpYXQiOjE2NjM3NjI5MzMsImV4cCI6MTY2Mzc2Mjk5M30.tgu_d78pkrGrnjZmr6TQOtJ3Q8ntp5ql5EoGvn4ID1Hi8pmlzY6mbdBQ21_a9gT8zBvT_GKQ7-TmjfImVO7psA
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJbUk9MRV9BRE1JTl0iLCJpYXQiOjE2NjM3NjI5MzMsImV4cCI6MTY2Mzc2Mjk5M30.tgu_d78pkrGrnjZmr6TQOtJ3Q8ntp5ql5EoGvn4ID1Hi8pmlzY6mbdBQ21_a9gT8zBvT_GKQ7-TmjfImVO7psA
+<> 2022-09-21T232739.200.json
 
 ###
 
@@ -78,135 +174,7 @@ Content-Type: application/json
   "password": "admin123"
 }
 
-<> 2022-09-21T192325.200.json
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJbUk9MRV9BRE1JTl0iLCJpYXQiOjE2NjM3NjI5MzMsImV4cCI6MTY2Mzc2Mjk5M30.tgu_d78pkrGrnjZmr6TQOtJ3Q8ntp5ql5EoGvn4ID1Hi8pmlzY6mbdBQ21_a9gT8zBvT_GKQ7-TmjfImVO7psA
-
-###
-
-POST http://localhost:8080/api/v1/login
-Accept: application/json
-Content-Type: application/json
-
-{
-  "email": "johndoe@email.com",
-  "password": "12345"
-}
-
-<> 2022-09-21T192245.406.json
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJbUk9MRV9BRE1JTl0iLCJpYXQiOjE2NjM3NjI5MzMsImV4cCI6MTY2Mzc2Mjk5M30.tgu_d78pkrGrnjZmr6TQOtJ3Q8ntp5ql5EoGvn4ID1Hi8pmlzY6mbdBQ21_a9gT8zBvT_GKQ7-TmjfImVO7psA
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJbUk9MRV9BRE1JTl0iLCJpYXQiOjE2NjM3NjI5MzMsImV4cCI6MTY2Mzc2Mjk5M30.tgu_d78pkrGrnjZmr6TQOtJ3Q8ntp5ql5EoGvn4ID1Hi8pmlzY6mbdBQ21_a9gT8zBvT_GKQ7-TmjfImVO7psA
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJbUk9MRV9BRE1JTl0iLCJpYXQiOjE2NjM3NjI5MzMsImV4cCI6MTY2Mzc2Mjk5M30.tgu_d78pkrGrnjZmr6TQOtJ3Q8ntp5ql5EoGvn4ID1Hi8pmlzY6mbdBQ21_a9gT8zBvT_GKQ7-TmjfImVO7psA
-
-###
-
-POST http://localhost:8080/api/v1/login
-Accept: application/json
-Content-Type: application/json
-
-{
-  "email": "admin@admin.com",
-  "password": "admin123"
-}
-
-<> 2022-09-21T192213.200.json
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IltST0xFX1VTRVJdIiwiaWF0IjoxNjYzNzYyODMyLCJleHAiOjE2NjM3NjI4OTJ9.99SogdbDP-_RvFfO37YKuIyEisYnvbb7uiLzdyJc8xPJ0XR1d7QLradGqrkuTO3GB5_aKhn6Q_MkMcE6kqBZIA
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IltST0xFX1VTRVJdIiwiaWF0IjoxNjYzNzYyODMyLCJleHAiOjE2NjM3NjI4OTJ9.99SogdbDP-_RvFfO37YKuIyEisYnvbb7uiLzdyJc8xPJ0XR1d7QLradGqrkuTO3GB5_aKhn6Q_MkMcE6kqBZIA
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IltST0xFX1VTRVJdIiwiaWF0IjoxNjYzNzYyODMyLCJleHAiOjE2NjM3NjI4OTJ9.99SogdbDP-_RvFfO37YKuIyEisYnvbb7uiLzdyJc8xPJ0XR1d7QLradGqrkuTO3GB5_aKhn6Q_MkMcE6kqBZIA
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IltST0xFX1VTRVJdIiwiaWF0IjoxNjYzNzYyODMyLCJleHAiOjE2NjM3NjI4OTJ9.99SogdbDP-_RvFfO37YKuIyEisYnvbb7uiLzdyJc8xPJ0XR1d7QLradGqrkuTO3GB5_aKhn6Q_MkMcE6kqBZIA
-
-###
-
-POST http://localhost:8080/api/v1/login
-Accept: application/json
-Content-Type: application/json
-
-{
-  "email": "johndoe@email.com",
-  "password": "johndoe123"
-}
-
-<> 2022-09-21T192032.200.json
-
-###
-
-POST http://localhost:8080/api/v1/login
-Accept: application/json
-Content-Type: application/json
-
-{
-  "email": "johndoe@email.com",
-  "password": "12345"
-}
-
-<> 2022-09-21T192026.406.json
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm5hYnJvd0BlbWFpbC5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwiaWF0IjoxNjYzNzYxMTkyLCJleHAiOjE2NjM3NjEyNTJ9.SM74SIy3c2tYjkNr7WN4I6iRKgd1n5J8YrHZeYbk-Quio9FbKr1DHfpUvMaXKl2nObTeQq-UMMoQozDMxq4oVA
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm5hYnJvd0BlbWFpbC5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwiaWF0IjoxNjYzNzYxMTkyLCJleHAiOjE2NjM3NjEyNTJ9.SM74SIy3c2tYjkNr7WN4I6iRKgd1n5J8YrHZeYbk-Quio9FbKr1DHfpUvMaXKl2nObTeQq-UMMoQozDMxq4oVA
-
-<> 2022-09-21T185338.200.json
-
-###
-
-POST http://localhost:8080/api/v1/register
-Content-Type: application/json
-Accept: application/json
-
-{
-  "name": "Anna Brow",
-  "email": "annabrow@email.com",
-  "password": "anna1234"
-}
-
-<> 2022-09-21T185312.200.json
+<> 2022-09-21T232721.200.json
 
 ###
 
@@ -220,7 +188,185 @@ Accept: application/json
   "password": "johndoe123"
 }
 
-<> 2022-09-21T185246.406.json
+<> 2022-09-21T232706.406.json
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
+
+<> 2022-09-21T232454.200.json
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiwgUk9MRV9BRE1JTiIsImlhdCI6MTY2Mzc3NjgzMCwiZXhwIjoxNjYzNzc4MDMwfQ.U8M9dWOszhoPHsXj58IYQ3Yh-UUk7gx3xdau723yujhXlSzoD8BaUAnah4QtK5sLDdN1rQtni451CemQOf3moA
+
+###
+
+POST http://localhost:8080/api/v1/ungrant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
+
+{
+  "userId": 4
+}
+
+<> 2022-09-21T232443.200.json
+
+###
+
+POST http://localhost:8080/api/v1/ungrant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
+
+{
+  "userId": null
+}
+
+<> 2022-09-21T232436.406.json
+
+###
+
+POST http://localhost:8080/api/v1/ungrant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
+
+{
+  "userId": 123456789
+}
+
+<> 2022-09-21T232432.406.json
+
+###
+
+POST http://localhost:8080/api/v1/grant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
+
+{
+  "userId": null
+}
+
+<> 2022-09-21T231744.406.json
+
+###
+
+POST http://localhost:8080/api/v1/grant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
+
+{
+  "userId": null
+}
+
+<> 2022-09-21T231740.406.json
+
+###
+
+POST http://localhost:8080/api/v1/grant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
+
+{
+  "userId": 4
+}
+
+<> 2022-09-21T231734.406.json
+
+###
+
+POST http://localhost:8080/api/v1/grant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiwgUk9MRV9BRE1JTiIsImlhdCI6MTY2Mzc3NjgzMCwiZXhwIjoxNjYzNzc4MDMwfQ.U8M9dWOszhoPHsXj58IYQ3Yh-UUk7gx3xdau723yujhXlSzoD8BaUAnah4QtK5sLDdN1rQtni451CemQOf3moA
+
+{
+  "userId": 4
+}
+
+###
+
+POST http://localhost:8080/api/v1/grant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
+
+{
+  "userId": 4
+}
+
+<> 2022-09-21T231716.406.json
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiwgUk9MRV9BRE1JTiIsImlhdCI6MTY2Mzc3NjgzMCwiZXhwIjoxNjYzNzc4MDMwfQ.U8M9dWOszhoPHsXj58IYQ3Yh-UUk7gx3xdau723yujhXlSzoD8BaUAnah4QtK5sLDdN1rQtni451CemQOf3moA
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
+
+<> 2022-09-21T231701.200.json
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiwgUk9MRV9BRE1JTiIsImlhdCI6MTY2Mzc3NjgzMCwiZXhwIjoxNjYzNzc4MDMwfQ.U8M9dWOszhoPHsXj58IYQ3Yh-UUk7gx3xdau723yujhXlSzoD8BaUAnah4QtK5sLDdN1rQtni451CemQOf3moA
+
+###
+
+GET http://localhost:8080/api/v1/me
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
+
+<> 2022-09-21T231621.200.json
+
+###
+
+GET http://localhost:8080/api/v1/me
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiwgUk9MRV9BRE1JTiIsImlhdCI6MTY2Mzc3NjgzMCwiZXhwIjoxNjYzNzc4MDMwfQ.U8M9dWOszhoPHsXj58IYQ3Yh-UUk7gx3xdau723yujhXlSzoD8BaUAnah4QtK5sLDdN1rQtni451CemQOf3moA
+
+<> 2022-09-21T231617.200.json
+
+###
+
+GET http://localhost:8080/api/v1/me
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
+
+<> 2022-09-21T231614.200.json
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiwgUk9MRV9BRE1JTiIsImlhdCI6MTY2Mzc3NjgzMCwiZXhwIjoxNjYzNzc4MDMwfQ.U8M9dWOszhoPHsXj58IYQ3Yh-UUk7gx3xdau723yujhXlSzoD8BaUAnah4QtK5sLDdN1rQtni451CemQOf3moA
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiwgUk9MRV9BRE1JTiIsImlhdCI6MTY2Mzc3NjgzMCwiZXhwIjoxNjYzNzc4MDMwfQ.U8M9dWOszhoPHsXj58IYQ3Yh-UUk7gx3xdau723yujhXlSzoD8BaUAnah4QtK5sLDdN1rQtni451CemQOf3moA
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiwgUk9MRV9BRE1JTiIsImlhdCI6MTY2Mzc3NjgzMCwiZXhwIjoxNjYzNzc4MDMwfQ.U8M9dWOszhoPHsXj58IYQ3Yh-UUk7gx3xdau723yujhXlSzoD8BaUAnah4QtK5sLDdN1rQtni451CemQOf3moA
 
 ###
 
@@ -233,235 +379,131 @@ Content-Type: application/json
   "password": "johndoe123"
 }
 
-<> 2022-09-21T185236.200.json
+<> 2022-09-21T231350.200.json
 
 ###
 
-POST http://localhost:8080/api/v1/login
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlhdCI6MTY2Mzc3NjU4OSwiZXhwIjoxNjYzNzc3Nzg5fQ.OiTHHIAoqjj3OT58CpCsn_lIx21Tz57-xXoV_GgQpgZ_UBFTqyz41SODjDjbJlNoC44eY1lnkBRQKEKabwRsow
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
+
+<> 2022-09-21T231334.200.json
+
+###
+
+GET http://localhost:8080/api/v1/me
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlhdCI6MTY2Mzc3NjU4OSwiZXhwIjoxNjYzNzc3Nzg5fQ.OiTHHIAoqjj3OT58CpCsn_lIx21Tz57-xXoV_GgQpgZ_UBFTqyz41SODjDjbJlNoC44eY1lnkBRQKEKabwRsow
+
+<> 2022-09-21T231313.200.json
+
+###
+
+GET http://localhost:8080/api/v1/me
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlhdCI6MTY2Mzc3NjU4OSwiZXhwIjoxNjYzNzc3Nzg5fQ.OiTHHIAoqjj3OT58CpCsn_lIx21Tz57-xXoV_GgQpgZ_UBFTqyz41SODjDjbJlNoC44eY1lnkBRQKEKabwRsow
+
+<> 2022-09-21T231311.200.json
+
+###
+
+POST http://localhost:8080/api/v1/grant
 Accept: application/json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
 
 {
-  "email": "johndoe@email.com",
-  "password": "12345"
+  "userId": 4
 }
 
-<> 2022-09-21T185230.406.json
+<> 2022-09-21T231245.406.json
 
 ###
 
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3NjA3ODYsImV4cCI6MTY2Mzc2MDg0Nn0.0-Uj_iJZTYV0Webo-x--bUlC6aqvCjI_UekMuaK3-GGFUbjF6NHcE1Z5oawL0GsJLhzyNBWaFZzf0pNMdK9jKw
-
-###
-
-POST http://localhost:8080/api/v1/register
-Content-Type: application/json
-Accept: application/json
-
-{
-  "name": "",
-  "email": "",
-  "password": ""
-}
-
-<> 2022-09-21T184652.417.json
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3NjA3ODYsImV4cCI6MTY2Mzc2MDg0Nn0.0-Uj_iJZTYV0Webo-x--bUlC6aqvCjI_UekMuaK3-GGFUbjF6NHcE1Z5oawL0GsJLhzyNBWaFZzf0pNMdK9jKw
-
-<> 2022-09-21T184638.200.json
-
-###
-
-POST http://localhost:8080/api/v1/login
+POST http://localhost:8080/api/v1/grant
 Accept: application/json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
 
 {
-  "email": "johndoe@email.com",
-  "password": "johndoe123"
+  "userId": 4
 }
 
-<> 2022-09-21T184626.200.json
+<> 2022-09-21T231242.406.json
 
 ###
 
-GET http://localhost:8080/api/v1/admin
+GET http://localhost:8080/api/v1/users
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3MTI0ODEsImV4cCI6MTY2MzcxMjU0MX0.I9LrI7t7iRPRguoRl03dMwapk7gBGkNdg_9jS-VO0E4OSe4m6zcOdHgmXZZFKxp4eKU5iPY0EhvEyycHf7gpfg
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
+
+<> 2022-09-21T231227.200.json
 
 ###
 
-POST http://localhost:8080/api/v1/login
+GET http://localhost:8080/api/v1/me
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJyb2xlcyI6IlJPTEVfVVNFUiIsImlhdCI6MTY2Mzc3NjU4OSwiZXhwIjoxNjYzNzc3Nzg5fQ.OiTHHIAoqjj3OT58CpCsn_lIx21Tz57-xXoV_GgQpgZ_UBFTqyz41SODjDjbJlNoC44eY1lnkBRQKEKabwRsow
+
+<> 2022-09-21T231210.200.json
+
+###
+
+POST http://localhost:8080/api/v1/grant
 Accept: application/json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
 
 {
-  "email": "johndoe@email.com",
-  "password": "12345"
+  "userId": 4
 }
 
-<> 2022-09-21T184553.406.json
+<> 2022-09-21T231154.200.json
 
 ###
 
-POST http://localhost:8080/api/v1/login
+POST http://localhost:8080/api/v1/grant
 Accept: application/json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
 
 {
-  "email": "johndoe@email.com",
-  "password": "12345"
+  "userId": 123456789
 }
 
-<> 2022-09-21T184344.401.json
+<> 2022-09-21T231146.406.json
 
 ###
 
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3MTI0ODEsImV4cCI6MTY2MzcxMjU0MX0.I9LrI7t7iRPRguoRl03dMwapk7gBGkNdg_9jS-VO0E4OSe4m6zcOdHgmXZZFKxp4eKU5iPY0EhvEyycHf7gpfg
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3MTI0ODEsImV4cCI6MTY2MzcxMjU0MX0.I9LrI7t7iRPRguoRl03dMwapk7gBGkNdg_9jS-VO0E4OSe4m6zcOdHgmXZZFKxp4eKU5iPY0EhvEyycHf7gpfg
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3MTI0ODEsImV4cCI6MTY2MzcxMjU0MX0.I9LrI7t7iRPRguoRl03dMwapk7gBGkNdg_9jS-VO0E4OSe4m6zcOdHgmXZZFKxp4eKU5iPY0EhvEyycHf7gpfg
-
-<> 2022-09-21T052200.200.json
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3MTI0ODEsImV4cCI6MTY2MzcxMjU0MX0.I9LrI7t7iRPRguoRl03dMwapk7gBGkNdg_9jS-VO0E4OSe4m6zcOdHgmXZZFKxp4eKU5iPY0EhvEyycHf7gpfg
-
-<> 2022-09-21T052136.200.json
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3MTIwNTUsImV4cCI6MTY2MzcxMjExNX0.vtLDmd7bYCWOAPy05TUxZUledoz83lKr38gfmhOitRkhLBWlucPHFGxrv4v9A3-P3cBMRQ42PZ3L3LMS4of9lQ
-
-###
-
-POST http://localhost:8080/api/v1/login
+POST http://localhost:8080/api/v1/grant
 Accept: application/json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
 
 {
-  "email": "johndoe@email.com",
-  "password": "johndoe123"
+  "userId": 123456789
 }
 
-<> 2022-09-21T052121.200.json
+<> 2022-09-21T231124.406.json
 
 ###
 
-POST http://localhost:8080/api/v1/login
+POST http://localhost:8080/api/v1/grant
 Accept: application/json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzc2NjE1LCJleHAiOjE2NjM3Nzc4MTV9.DDHQosxfQDxhG8SExBJBIBKfrGXxbew-vV8FfZcnsixISj26iU5IoC37ox60YgouOy0igw96PFcZwRSvsVMc4Q
 
 {
-  "email": "johndoe@email.com",
-  "password": "12345"
+  "userId": null
 }
 
-<> 2022-09-21T052113.401.json
-
-###
-
-POST http://localhost:8080/api/v1/login
-Accept: application/json
-Content-Type: application/json
-
-{
-  "email": "johndoe@email.com",
-  "password": "12345"
-}
-
-<> 2022-09-21T052102.401.json
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3MTIwNTUsImV4cCI6MTY2MzcxMjExNX0.vtLDmd7bYCWOAPy05TUxZUledoz83lKr38gfmhOitRkhLBWlucPHFGxrv4v9A3-P3cBMRQ42PZ3L3LMS4of9lQ
-
-###
-
-POST http://localhost:8080/api/v1/login
-Accept: application/json
-Content-Type: application/json
-
-{
-  "email": "johndoe@email.com",
-  "password": "johndoe123"
-}
-
-<> 2022-09-21T051416.200.json
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0LEpvaG4gRG9lLGpvaG5kb2VAZW1haWwuY29tIiwiaXNzIjoiQGx1dGhmaXB1biIsImlhdCI6MTY2MzcxMDU5NSwiZXhwIjoxNjYzNzEwNjU1fQ.3GbzkaucHpoksyQzj0zEbq-AQ7O7WiiWtPlRTGItpLrLXtYAK3KuA2z8aznDCCGahom8KcHb_mxe08xhhVovVQ
-
-###
-
-POST http://localhost:8080/api/v1/login
-Accept: application/json
-Content-Type: application/json
-
-{
-  "email": "johndoe@email.com",
-  "password": "johndoe123"
-}
-
-<> 2022-09-21T044955.200.json
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0LEpvaG4gRG9lLGpvaG5kb2VAZW1haWwuY29tIiwiaXNzIjoiQGx1dGhmaXB1biIsImlhdCI6MTY2MzcxMDI4NSwiZXhwIjoxNjYzNzEwMzQ1fQ.jLHkIr8vT1qgD0tlqowXJFokCqULoW3WQJmsMH2nx73rmshbe-3XRpID6CS4HsqM-86Vhlq_ZYj6oxwmyAigDA
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0LEpvaG4gRG9lLGpvaG5kb2VAZW1haWwuY29tIiwiaXNzIjoiQGx1dGhmaXB1biIsImlhdCI6MTY2MzcxMDI4NSwiZXhwIjoxNjYzNzEwMzQ1fQ.jLHkIr8vT1qgD0tlqowXJFokCqULoW3WQJmsMH2nx73rmshbe-3XRpID6CS4HsqM-86Vhlq_ZYj6oxwmyAigDA
-
-###
-
-POST http://localhost:8080/api/v1/login
-Accept: application/json
-Content-Type: application/json
-
-{
-  "email": "johndoe@email.com",
-  "password": "johndoe123"
-}
-
-<> 2022-09-21T044445.200.json
-
-###
-
-GET http://localhost:8080/api/v1/admin
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0LEpvaG4gRG9lLGpvaG5kb2VAZW1haWwuY29tIiwiaXNzIjoiQGx1dGhmaXB1biIsImlhdCI6MTY2MzcwOTk0OCwiZXhwIjoxNjYzNzEwMDA4fQ.RrlCeBJjdjAB4m1iFNyobQpZpNTtotn8FFAWvQKElw2o_KqR9XD8HLol-hl1w7P8vgZZ6VCgxav3BjeCPYWQqA
+<> 2022-09-21T231114.406.json
 
 ###
 

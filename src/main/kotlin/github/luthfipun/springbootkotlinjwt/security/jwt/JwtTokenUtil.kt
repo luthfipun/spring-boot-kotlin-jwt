@@ -39,10 +39,6 @@ class JwtTokenUtil {
         }
     }
 
-    fun getSubject(token: String): String {
-        return parseClaims(token).subject
-    }
-
     fun parseClaims(token: String): Claims {
         return Jwts.parserBuilder()
             .setSigningKey(secretKey)

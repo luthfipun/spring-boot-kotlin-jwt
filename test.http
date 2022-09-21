@@ -56,8 +56,88 @@ Content-Type: application/json
   "password": "12345"
 }
 
-### Test Admin Area
+### Test User and Admin Area / Get Profile as User
 
-GET {{host}}/admin
+GET {{host}}/me
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzYzNDIwLCJleHAiOjE2NjM3NjM0ODB9.b3vOQkRsS8p2WvXCXRnADimnp4kDaMa4ID_uWbl3o57sj11WyToJ649WXJgtMJ19-z9APiTLxVC1B005wSXixA
+Authorization: Bearer {{user_token}}
+
+### Test User and Admin Area / Get Profile as Admin
+
+GET {{host}}/me
+Accept: application/json
+Authorization: Bearer {{admin_token}}
+
+### Test Admin Area as Admin
+
+GET {{host}}/users
+Accept: application/json
+Authorization: Bearer {{admin_token}}
+
+### Test Admin Area as User Admin
+
+GET {{host}}/users
+Accept: application/json
+Authorization: Bearer {{user_token}}
+
+### Test Grant As Admin
+
+POST {{host}}/grant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{admin_token}}
+
+{
+  "userId": 4
+}
+
+### Test Grant As Admin Invalid
+POST {{host}}/grant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{admin_token}}
+
+{
+  "userId": null
+}
+
+### Test Grant As Admin Invalid User ID
+POST {{host}}/grant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{admin_token}}
+
+{
+  "userId": 123456789
+}
+
+### Test Un-Grant As Admin
+
+POST {{host}}/ungrant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{admin_token}}
+
+{
+  "userId": 4
+}
+
+### Test Un-Grant As Admin Invalid
+POST {{host}}/ungrant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{admin_token}}
+
+{
+  "userId": null
+}
+
+### Test Un-Grant As Admin Invalid User ID
+POST {{host}}/ungrant
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{admin_token}}
+
+{
+  "userId": 123456789
+}

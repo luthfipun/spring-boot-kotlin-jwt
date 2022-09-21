@@ -2,11 +2,13 @@ package github.luthfipun.springbootkotlinjwt.service.impl
 
 import github.luthfipun.springbootkotlinjwt.domain.error.ErrorException
 import github.luthfipun.springbootkotlinjwt.domain.model.entity.UserAuth
+import github.luthfipun.springbootkotlinjwt.domain.model.request.GrantedRequest
 import github.luthfipun.springbootkotlinjwt.domain.model.request.LoginRequest
 import github.luthfipun.springbootkotlinjwt.domain.model.request.RegisterRequest
 import github.luthfipun.springbootkotlinjwt.domain.model.response.RegisterLoginResponse
 import github.luthfipun.springbootkotlinjwt.domain.model.response.UsersResponse
 import github.luthfipun.springbootkotlinjwt.domain.model.response.WebResponse
+import github.luthfipun.springbootkotlinjwt.domain.util.Constant.ROLE_ADMIN
 import github.luthfipun.springbootkotlinjwt.domain.util.Constant.ROLE_USER
 import github.luthfipun.springbootkotlinjwt.domain.validation.ValidationUtil
 import github.luthfipun.springbootkotlinjwt.repository.RoleRepository
@@ -76,6 +78,54 @@ class UserServiceImpl(
 
         }catch (e: BadCredentialsException){
             throw ErrorException("Email and password is not correctly!")
+        }
+    }
+
+    override fun profile(email: String): WebResponse<UsersResponse> {
+        if (!userRepository.findByEmail(email = email).isPresent){
+            throw ErrorException("Access token is not valid!")
+        }
+
+        return WebResponse(data = userRepository.findByEmail(email = email).get().toUsersResponse())
+    }
+
+    override fun grantAsAdmin(grantedRequest: GrantedRequest): WebResponse<Nothing> {
+        validationUtil.validate(grantedRequest)
+        findExistingUserById(userId = grantedRequest.userId)
+
+        val user = userRepository.findById(grantedRequest.userId).get()
+        val roleAdmin = roleRepository.findByName(ROLE_ADMIN).get()
+
+        if (user.roles.contains(roleAdmin)){
+            throw ErrorException("User has already as administrators")
+        }
+
+        user.roles.remove(roleRepository.findByName(ROLE_USER).get())
+        user.roles.add(roleAdmin)
+        userRepository.save(user)
+        return WebResponse()
+    }
+
+    override fun unGrantAsAdmin(grantedRequest: GrantedRequest): WebResponse<Nothing> {
+        validationUtil.validate(grantedRequest)
+        findExistingUserById(userId = grantedRequest.userId)
+
+        val user = userRepository.findById(grantedRequest.userId).get()
+        val roleAdmin = roleRepository.findByName(ROLE_ADMIN).get()
+
+        if (!user.roles.contains(roleAdmin)){
+            throw ErrorException("User not as administrators")
+        }
+
+        user.roles.remove(roleAdmin)
+        user.roles.add(roleRepository.findByName(ROLE_USER).get())
+        userRepository.save(user)
+        return WebResponse()
+    }
+
+    private fun findExistingUserById(userId: Long) {
+        if (!userRepository.existsById(userId)){
+            throw ErrorException("User id not found!")
         }
     }
 }
