@@ -1,6 +1,7 @@
 package github.luthfipun.springbootkotlinjwt.security.jwt
 
 import github.luthfipun.springbootkotlinjwt.domain.model.entity.UserAuth
+import github.luthfipun.springbootkotlinjwt.domain.util.AppProperties
 import github.luthfipun.springbootkotlinjwt.domain.util.Constant.JWT_TOKEN_EXPIRED
 import io.jsonwebtoken.Claims
 import io.jsonwebtoken.JwtException
@@ -12,9 +13,11 @@ import java.util.*
 import javax.crypto.SecretKey
 
 @Component
-class JwtTokenUtil {
-
-    val secretKey: SecretKey = Keys.secretKeyFor(SignatureAlgorithm.HS512)
+class JwtTokenUtil(
+    appProperties: AppProperties
+) {
+    private val base64EncodeKey: ByteArray = Base64.getEncoder().encode(appProperties.plainSecretKey.toByteArray())
+    private val secretKey: SecretKey = Keys.hmacShaKeyFor(base64EncodeKey)
 
     fun generateAccessToken(userAuth: UserAuth): String {
         return Jwts.builder()
@@ -23,7 +26,7 @@ class JwtTokenUtil {
             .claim("roles", userAuth.roles.joinToString())
             .setIssuedAt(Date())
             .setExpiration(Date(System.currentTimeMillis() + JWT_TOKEN_EXPIRED))
-            .signWith(secretKey)
+            .signWith(secretKey, SignatureAlgorithm.HS256)
             .compact()
     }
 

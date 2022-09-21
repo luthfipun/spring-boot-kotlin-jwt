@@ -10,7 +10,7 @@ import org.springframework.security.config.annotation.authentication.configurati
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
-import org.springframework.security.config.http.SessionCreationPolicy
+import org.springframework.security.config.http.SessionCreationPolicy.STATELESS
 import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.security.core.userdetails.UsernameNotFoundException
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
@@ -48,16 +48,10 @@ class ApplicationSecurityConfig(
         http: HttpSecurity
     ): SecurityFilterChain{
         http.csrf().disable()
-        http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-
-
-        http.authorizeRequests()
-            .antMatchers("/api/v1/register", "/api/v1/login").permitAll()
-            .anyRequest().authenticated()
-
-        http.exceptionHandling()
-            .authenticationEntryPoint(HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED))
-
+        http.sessionManagement().sessionCreationPolicy(STATELESS)
+        http.authorizeRequests().antMatchers("/api/v1/register", "/api/v1/login").permitAll()
+        http.authorizeRequests().anyRequest().authenticated()
+        http.exceptionHandling().authenticationEntryPoint(HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED))
         http.addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter::class.java)
         return http.build()
     }
