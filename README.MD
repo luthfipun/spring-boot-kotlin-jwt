@@ -1,6 +1,6 @@
 # Documentation
 
-Spring-boot personal project application with data JPA restful API, multiple role user authorization and Json Web Token (JWT) authentication
+Spring Boot personal project application with data JPA restful API, multiple role user authorization and Json Web Token (JWT) authentication
 
 ## TechStack
 
@@ -67,13 +67,14 @@ Spring-boot personal project application with data JPA restful API, multiple rol
     }
     ```
 
-### USER AREA
+### PROFILE AREA USER AND ADMIN
 
 - Request
     - Method : GET
     - Endpoint : ``api/v1/me``
     - Header :
         - accept: application/json
+        - Authorization: Bearer ``{access_token}``
 - Response
     ```json
     {
@@ -103,6 +104,7 @@ Spring-boot personal project application with data JPA restful API, multiple rol
     - Endpoint : ``api/v1/users``
     - Header :
         - accept: application/json
+        - Authorization: Bearer ``{access_token}``
 - Response
     ```json
     {
@@ -127,6 +129,7 @@ Spring-boot personal project application with data JPA restful API, multiple rol
   - Header :
     - accept: application/json
     - content-type: application/json
+    - Authorization: Bearer ``{access_token}``
   - Body :
   ```json
     {
@@ -150,6 +153,7 @@ Spring-boot personal project application with data JPA restful API, multiple rol
   - Header :
     - accept: application/json
     - content-type: application/json
+    - Authorization: Bearer ``{access_token}``
   - Body :
   ```json
     {
