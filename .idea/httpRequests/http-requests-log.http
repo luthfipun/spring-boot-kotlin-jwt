@@ -1,0 +1,531 @@
+GET http://localhost:8080/api/v1/admin
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm5hYnJvd0BlbWFpbC5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwiaWF0IjoxNjYzNzYxMTkyLCJleHAiOjE2NjM3NjEyNTJ9.SM74SIy3c2tYjkNr7WN4I6iRKgd1n5J8YrHZeYbk-Quio9FbKr1DHfpUvMaXKl2nObTeQq-UMMoQozDMxq4oVA
+
+<> 2022-09-21T185338.200.json
+
+###
+
+POST http://localhost:8080/api/v1/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Anna Brow",
+  "email": "annabrow@email.com",
+  "password": "anna1234"
+}
+
+<> 2022-09-21T185312.200.json
+
+###
+
+POST http://localhost:8080/api/v1/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "John Doe",
+  "email": "johndoe@email.com",
+  "password": "johndoe123"
+}
+
+<> 2022-09-21T185246.406.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "johndoe123"
+}
+
+<> 2022-09-21T185236.200.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "12345"
+}
+
+<> 2022-09-21T185230.406.json
+
+###
+
+GET http://localhost:8080/api/v1/admin
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3NjA3ODYsImV4cCI6MTY2Mzc2MDg0Nn0.0-Uj_iJZTYV0Webo-x--bUlC6aqvCjI_UekMuaK3-GGFUbjF6NHcE1Z5oawL0GsJLhzyNBWaFZzf0pNMdK9jKw
+
+###
+
+POST http://localhost:8080/api/v1/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "",
+  "email": "",
+  "password": ""
+}
+
+<> 2022-09-21T184652.417.json
+
+###
+
+GET http://localhost:8080/api/v1/admin
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3NjA3ODYsImV4cCI6MTY2Mzc2MDg0Nn0.0-Uj_iJZTYV0Webo-x--bUlC6aqvCjI_UekMuaK3-GGFUbjF6NHcE1Z5oawL0GsJLhzyNBWaFZzf0pNMdK9jKw
+
+<> 2022-09-21T184638.200.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "johndoe123"
+}
+
+<> 2022-09-21T184626.200.json
+
+###
+
+GET http://localhost:8080/api/v1/admin
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3MTI0ODEsImV4cCI6MTY2MzcxMjU0MX0.I9LrI7t7iRPRguoRl03dMwapk7gBGkNdg_9jS-VO0E4OSe4m6zcOdHgmXZZFKxp4eKU5iPY0EhvEyycHf7gpfg
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "12345"
+}
+
+<> 2022-09-21T184553.406.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "12345"
+}
+
+<> 2022-09-21T184344.401.json
+
+###
+
+GET http://localhost:8080/api/v1/admin
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3MTI0ODEsImV4cCI6MTY2MzcxMjU0MX0.I9LrI7t7iRPRguoRl03dMwapk7gBGkNdg_9jS-VO0E4OSe4m6zcOdHgmXZZFKxp4eKU5iPY0EhvEyycHf7gpfg
+
+###
+
+GET http://localhost:8080/api/v1/admin
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3MTI0ODEsImV4cCI6MTY2MzcxMjU0MX0.I9LrI7t7iRPRguoRl03dMwapk7gBGkNdg_9jS-VO0E4OSe4m6zcOdHgmXZZFKxp4eKU5iPY0EhvEyycHf7gpfg
+
+###
+
+GET http://localhost:8080/api/v1/admin
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3MTI0ODEsImV4cCI6MTY2MzcxMjU0MX0.I9LrI7t7iRPRguoRl03dMwapk7gBGkNdg_9jS-VO0E4OSe4m6zcOdHgmXZZFKxp4eKU5iPY0EhvEyycHf7gpfg
+
+<> 2022-09-21T052200.200.json
+
+###
+
+GET http://localhost:8080/api/v1/admin
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3MTI0ODEsImV4cCI6MTY2MzcxMjU0MX0.I9LrI7t7iRPRguoRl03dMwapk7gBGkNdg_9jS-VO0E4OSe4m6zcOdHgmXZZFKxp4eKU5iPY0EhvEyycHf7gpfg
+
+<> 2022-09-21T052136.200.json
+
+###
+
+GET http://localhost:8080/api/v1/admin
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3MTIwNTUsImV4cCI6MTY2MzcxMjExNX0.vtLDmd7bYCWOAPy05TUxZUledoz83lKr38gfmhOitRkhLBWlucPHFGxrv4v9A3-P3cBMRQ42PZ3L3LMS4of9lQ
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "johndoe123"
+}
+
+<> 2022-09-21T052121.200.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "12345"
+}
+
+<> 2022-09-21T052113.401.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "12345"
+}
+
+<> 2022-09-21T052102.401.json
+
+###
+
+GET http://localhost:8080/api/v1/admin
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3MTIwNTUsImV4cCI6MTY2MzcxMjExNX0.vtLDmd7bYCWOAPy05TUxZUledoz83lKr38gfmhOitRkhLBWlucPHFGxrv4v9A3-P3cBMRQ42PZ3L3LMS4of9lQ
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "johndoe123"
+}
+
+<> 2022-09-21T051416.200.json
+
+###
+
+GET http://localhost:8080/api/v1/admin
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0LEpvaG4gRG9lLGpvaG5kb2VAZW1haWwuY29tIiwiaXNzIjoiQGx1dGhmaXB1biIsImlhdCI6MTY2MzcxMDU5NSwiZXhwIjoxNjYzNzEwNjU1fQ.3GbzkaucHpoksyQzj0zEbq-AQ7O7WiiWtPlRTGItpLrLXtYAK3KuA2z8aznDCCGahom8KcHb_mxe08xhhVovVQ
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "johndoe123"
+}
+
+<> 2022-09-21T044955.200.json
+
+###
+
+GET http://localhost:8080/api/v1/admin
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0LEpvaG4gRG9lLGpvaG5kb2VAZW1haWwuY29tIiwiaXNzIjoiQGx1dGhmaXB1biIsImlhdCI6MTY2MzcxMDI4NSwiZXhwIjoxNjYzNzEwMzQ1fQ.jLHkIr8vT1qgD0tlqowXJFokCqULoW3WQJmsMH2nx73rmshbe-3XRpID6CS4HsqM-86Vhlq_ZYj6oxwmyAigDA
+
+###
+
+GET http://localhost:8080/api/v1/admin
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0LEpvaG4gRG9lLGpvaG5kb2VAZW1haWwuY29tIiwiaXNzIjoiQGx1dGhmaXB1biIsImlhdCI6MTY2MzcxMDI4NSwiZXhwIjoxNjYzNzEwMzQ1fQ.jLHkIr8vT1qgD0tlqowXJFokCqULoW3WQJmsMH2nx73rmshbe-3XRpID6CS4HsqM-86Vhlq_ZYj6oxwmyAigDA
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "johndoe123"
+}
+
+<> 2022-09-21T044445.200.json
+
+###
+
+GET http://localhost:8080/api/v1/admin
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0LEpvaG4gRG9lLGpvaG5kb2VAZW1haWwuY29tIiwiaXNzIjoiQGx1dGhmaXB1biIsImlhdCI6MTY2MzcwOTk0OCwiZXhwIjoxNjYzNzEwMDA4fQ.RrlCeBJjdjAB4m1iFNyobQpZpNTtotn8FFAWvQKElw2o_KqR9XD8HLol-hl1w7P8vgZZ6VCgxav3BjeCPYWQqA
+
+###
+
+GET http://localhost:8080/api/v1/admin
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0LEpvaG4gRG9lLGpvaG5kb2VAZW1haWwuY29tIiwiaXNzIjoiQGx1dGhmaXB1biIsImlhdCI6MTY2MzcwOTk0OCwiZXhwIjoxNjYzNzEwMDA4fQ.RrlCeBJjdjAB4m1iFNyobQpZpNTtotn8FFAWvQKElw2o_KqR9XD8HLol-hl1w7P8vgZZ6VCgxav3BjeCPYWQqA
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0LEpvaG4gRG9lLGpvaG5kb2VAZW1haWwuY29tIiwiaXNzIjoiQGx1dGhmaXB1biIsImlhdCI6MTY2MzcwOTk0OCwiZXhwIjoxNjYzNzEwMDA4fQ.RrlCeBJjdjAB4m1iFNyobQpZpNTtotn8FFAWvQKElw2o_KqR9XD8HLol-hl1w7P8vgZZ6VCgxav3BjeCPYWQqA"
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0LEpvaG4gRG9lLGpvaG5kb2VAZW1haWwuY29tIiwiaXNzIjoiQGx1dGhmaXB1biIsImlhdCI6MTY2MzcwOTk0OCwiZXhwIjoxNjYzNzEwMDA4fQ.RrlCeBJjdjAB4m1iFNyobQpZpNTtotn8FFAWvQKElw2o_KqR9XD8HLol-hl1w7P8vgZZ6VCgxav3BjeCPYWQqA
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0LEpvaG4gRG9lLGpvaG5kb2VAZW1haWwuY29tIiwiaXNzIjoiQGx1dGhmaXB1biIsImlhdCI6MTY2MzcwOTk0OCwiZXhwIjoxNjYzNzEwMDA4fQ.RrlCeBJjdjAB4m1iFNyobQpZpNTtotn8FFAWvQKElw2o_KqR9XD8HLol-hl1w7P8vgZZ6VCgxav3BjeCPYWQqA
+
+###
+
+GET http://localhost:8080/api/v1/users
+Accept: application/json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "johndoe123"
+}
+
+<> 2022-09-21T043908.200.json
+
+###
+
+POST http://localhost:8080/api/v1/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "",
+  "email": "",
+  "password": ""
+}
+
+<> 2022-09-21T043902.417.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "12345"
+}
+
+<> 2022-09-21T043858.401.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "johndoe123"
+}
+
+<> 2022-09-21T043312.500.json
+
+###
+
+POST http://localhost:8080/api/v1/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "",
+  "email": "",
+  "password": ""
+}
+
+<> 2022-09-21T043254.417.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "12345"
+}
+
+<> 2022-09-21T043250.401.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "johndoe123"
+}
+
+<> 2022-09-21T042830.500.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "12345"
+}
+
+<> 2022-09-21T042824.401.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "12345"
+}
+
+<> 2022-09-21T042809.401.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "12345"
+}
+
+<> 2022-09-21T042753.401.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "udin123"
+}
+
+<> 2022-09-21T042747.401.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "johndoe@email.com",
+  "password": "udin123"
+}
+
+<> 2022-09-21T042742.401.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "udin@gmail.com",
+  "password": "udin123"
+}
+
+<> 2022-09-21T042719.406.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "udin@gmail.com",
+  "password": "d"
+}
+
+<> 2022-09-21T042712.417.json
+
+###
+
+POST http://localhost:8080/api/v1/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "",
+  "email": "",
+  "password": ""
+}
+
+<> 2022-09-21T042656.417.json
+
+###
+
+POST http://localhost:8080/api/v1/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "",
+  "email": "",
+  "password": ""
+}
+
+<> 2022-09-21T042653.417.json
+
+###
+
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "udin@gmail.com",
+  "password": "d"
+}
+
+<> 2022-09-21T042439.404.json
+
+###
+

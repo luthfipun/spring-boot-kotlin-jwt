@@ -34,7 +34,7 @@ Content-Type: application/json
   "password": "johndoe123"
 }
 
-### Test Login Wrong
+### Test Login Wrong Password
 
 POST {{host}}/login
 Accept: application/json
@@ -49,4 +49,4 @@ Content-Type: application/json
 
 GET {{host}}/admin
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlzcyI6IkBsdXRoZmlwdW4iLCJpYXQiOjE2NjM3MTI0ODEsImV4cCI6MTY2MzcxMjU0MX0.I9LrI7t7iRPRguoRl03dMwapk7gBGkNdg_9jS-VO0E4OSe4m6zcOdHgmXZZFKxp4eKU5iPY0EhvEyycHf7gpfg
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm5hYnJvd0BlbWFpbC5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwiaWF0IjoxNjYzNzYxMTkyLCJleHAiOjE2NjM3NjEyNTJ9.SM74SIy3c2tYjkNr7WN4I6iRKgd1n5J8YrHZeYbk-Quio9FbKr1DHfpUvMaXKl2nObTeQq-UMMoQozDMxq4oVA

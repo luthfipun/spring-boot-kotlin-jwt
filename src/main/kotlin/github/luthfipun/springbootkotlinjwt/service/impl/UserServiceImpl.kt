@@ -48,7 +48,7 @@ class UserServiceImpl(
         user.roles.add(roleRepository.findByName(name = ROLE_USER).get())
         userRepository.save(user)
 
-        return WebResponse(data = RegisterLoginResponse(access_token = "not yet!"))
+        return generateAndAttemptToken(email = registerRequest.email, password = registerRequest.password)
     }
 
     override fun login(loginRequest: LoginRequest): WebResponse<RegisterLoginResponse> {
@@ -58,10 +58,15 @@ class UserServiceImpl(
             throw ErrorException("Email address not registered!")
         }
 
+        return generateAndAttemptToken(email = loginRequest.email, password = loginRequest.password)
+    }
+
+    @Throws(ErrorException::class)
+    private fun generateAndAttemptToken(email: String, password: String): WebResponse<RegisterLoginResponse> {
         try {
 
             val authentication: Authentication = authenticationManager.authenticate(
-                UsernamePasswordAuthenticationToken(loginRequest.email, loginRequest.password)
+                UsernamePasswordAuthenticationToken(email, password)
             )
 
             val userAuth: UserAuth = authentication.principal as UserAuth
@@ -70,7 +75,7 @@ class UserServiceImpl(
             return WebResponse(data = RegisterLoginResponse(access_token = accessToken))
 
         }catch (e: BadCredentialsException){
-            throw BadCredentialsException("Unauthorized!")
+            throw ErrorException("Email and password is not correctly!")
         }
     }
 }
