@@ -1,14 +1,20 @@
 package github.luthfipun.springbootkotlinjwt.domain.model.entity
 
 import org.springframework.security.core.GrantedAuthority
+import org.springframework.security.core.authority.SimpleGrantedAuthority
 import org.springframework.security.core.userdetails.UserDetails
 
 data class UserAuth(
     val email: String,
-    private val password: String? = ""
+    private val password: String? = "",
+    val roles: List<String> = listOf()
 ): UserDetails {
     override fun getAuthorities(): MutableCollection<out GrantedAuthority> {
-        return mutableListOf()
+        val authorities = mutableListOf<SimpleGrantedAuthority>()
+        this.roles.forEach {
+            authorities.add(SimpleGrantedAuthority(it))
+        }
+        return authorities
     }
 
     override fun getPassword(): String {

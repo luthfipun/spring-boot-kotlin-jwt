@@ -39,7 +39,8 @@ data class User(
     fun toUserAuth(): UserAuth {
         return UserAuth(
             email = this.email,
-            password = this.password
+            password = this.password,
+            roles = this.roles.map { it.name }
         )
     }
 }

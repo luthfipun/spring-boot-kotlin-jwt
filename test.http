@@ -23,7 +23,18 @@ Accept: application/json
   "password": ""
 }
 
-### Test Login
+### Test Login Admin
+
+POST {{host}}/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "admin@admin.com",
+  "password": "admin123"
+}
+
+### Test Login User
 
 POST {{host}}/login
 Accept: application/json
@@ -49,4 +60,4 @@ Content-Type: application/json
 
 GET {{host}}/admin
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm5hYnJvd0BlbWFpbC5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwiaWF0IjoxNjYzNzYxMTkyLCJleHAiOjE2NjM3NjEyNTJ9.SM74SIy3c2tYjkNr7WN4I6iRKgd1n5J8YrHZeYbk-Quio9FbKr1DHfpUvMaXKl2nObTeQq-UMMoQozDMxq4oVA
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpc3MiOiJAbHV0aGZpcHVuIiwicm9sZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNjYzNzYzNDIwLCJleHAiOjE2NjM3NjM0ODB9.b3vOQkRsS8p2WvXCXRnADimnp4kDaMa4ID_uWbl3o57sj11WyToJ649WXJgtMJ19-z9APiTLxVC1B005wSXixA

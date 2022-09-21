@@ -20,6 +20,7 @@ class JwtTokenUtil {
         return Jwts.builder()
             .setSubject(userAuth.email)
             .setIssuer("@luthfipun")
+            .claim("roles", userAuth.roles.joinToString())
             .setIssuedAt(Date())
             .setExpiration(Date(System.currentTimeMillis() + JWT_TOKEN_EXPIRED))
             .signWith(secretKey)
@@ -42,7 +43,7 @@ class JwtTokenUtil {
         return parseClaims(token).subject
     }
 
-    private fun parseClaims(token: String): Claims {
+    fun parseClaims(token: String): Claims {
         return Jwts.parserBuilder()
             .setSigningKey(secretKey)
             .build()

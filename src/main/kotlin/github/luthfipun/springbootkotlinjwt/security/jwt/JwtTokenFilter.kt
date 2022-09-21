@@ -1,7 +1,7 @@
 package github.luthfipun.springbootkotlinjwt.security.jwt
 
-import github.luthfipun.springbootkotlinjwt.domain.model.entity.User
 import github.luthfipun.springbootkotlinjwt.domain.model.entity.UserAuth
+import io.jsonwebtoken.Claims
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.security.core.userdetails.UserDetails
@@ -42,14 +42,19 @@ class JwtTokenFilter(
     private fun setAuthenticationContext(token: String, request: HttpServletRequest) {
         val userDetails: UserDetails = getUserDetails(token)
 
-        val authentication = UsernamePasswordAuthenticationToken(userDetails, null, null)
+        val authentication = UsernamePasswordAuthenticationToken(userDetails, null, userDetails.authorities)
         authentication.details = WebAuthenticationDetailsSource().buildDetails(request)
         SecurityContextHolder.getContext().authentication = authentication
     }
 
     private fun getUserDetails(token: String): UserDetails {
-        val jwtSubject = jwtTokenUtil.getSubject(token)
-        return UserAuth(email = jwtSubject)
+        val claims = jwtTokenUtil.parseClaims(token = token)
+        val subject = claims[Claims.SUBJECT] as String
+
+        val textRoles = claims["roles"] as String
+        val roles = textRoles.split(",")
+
+        return UserAuth(email = subject, roles = roles)
     }
 
     private fun getAccessToken(request: HttpServletRequest): String {
